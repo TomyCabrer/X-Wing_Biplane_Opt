@@ -64,13 +64,14 @@ For a *single*, flat wing change just three lines in `Main.m`:
 |---------|-----------|-----------|-----------|
 | Remove X-wing “kink” | `thetaDeg` | `5` ° | `0` |
 | Zero in-board fold   | `length_x` | `2.0` m | `0` |
-| One wing instead of two | `b` (span) & 'Cross_section_N'| `10` m & '8'| `5` m & '8'|
+| One wing instead of two | `b` (span) & `Cross_section_N`| `10` m & '8'| `5` m & `4`|
 
 ```matlab
 % Main.m – switch to single, flat wing
 thetaDeg = 0;   % no dihedral break
 length_x = 0;   % no in-board fold
 b        = b/2; % single wing, not biplane
+Cross_section_N = Cross_section_N/2; % single wing, not biplane
 ```
 ---
 ## 📋 Requirements
