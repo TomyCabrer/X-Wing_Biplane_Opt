@@ -193,7 +193,7 @@ Power_while_flying = Power_while_flying(pos);
 CDt      = CDt(pos);
 TotalMass = TotalMass(pos) / 9.81;           % Convert N → kg
 
-bestCL = CL(Range == max(Range));            % Absolute best CL
+
 
 % ---------------------- Build output table -----------------------------
 Max_Payload = (n_motors * max(Thrust_N)) / 9.81 - TotalMass;  % [kg]
@@ -208,6 +208,7 @@ CL_data = table(CL, AoA, V_flight, Range, time_flight, Drag, ...
                 AspectRatio, Span, Chord, MassBattery, TotalMass, ...
                 Max_Payload, Power_while_flying, Throttle_flight, CDt);
 
+bestCL = CL(Range == max(Range));            % Absolute best CL
 % ----------------------- Summary banner -------------------------------
 MR = find(Range == max(Range));
 fprintf(['\nBest range: %.2f km at %.2f m/s during a %.2f-min flight\n' ...
