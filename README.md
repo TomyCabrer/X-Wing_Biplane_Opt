@@ -51,7 +51,7 @@ Every solver has a `_with_comments` twin—so the maths is never a black box.
 | ![CL-V envelope](./CLOpt.png)            | **Range across \(C_L\)–Velocity envelope** &nbsp;— coloured contours + Pareto front. |
 | ![Differential thrust](./Diff_thrust.png) | **Differential-thrust split** &nbsp;— ~50/50 delivers max range & endurance (fixed CL). |
 | ![Aspect-ratio drag](./Drag.png)          | **Aspect ratio vs drag** &nbsp;— induced vs profile trade (fixed CL). |
-| ![Range & battery](./Range.png)           | **Velocity vs battery-mass** &nbsp;— range & endurance trends (fixed CL). |
+| ![Range & battery](./Range.png)           | **Velocity vs battery-mass** &nbsp;— range & endurance trends (fixed CL) (in minutes). |
 
 ---
 
